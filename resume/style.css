@@ -1,0 +1,138 @@
+/* General */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#resume {
+    width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid #4da6ff;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    color: #1e90ff;
+    margin: 0;
+    font-size: 32px;
+}
+
+.header h2 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 5px;
+}
+
+.header figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #1e90ff;
+}
+
+.header dl {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.header dd {
+    margin: 5px 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+/* Sections */
+section {
+    margin-top: 25px;
+}
+
+section h3 {
+    color: #1e90ff;
+    border-bottom: 2px solid #4da6ff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Paragraph */
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Education & Projects */
+.education h4,
+#project h4,
+.skill h4 {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/* Skills */
+.skill ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: square;
+}
+
+.skill li {
+    width: 120px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    border-top: 2px solid #4da6ff;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #resume {
+        width: 95%;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header figure {
+        position: static;
+        margin: 15px auto;
+    }
+
+    .skill ul {
+        display: block;
+    }
+}
