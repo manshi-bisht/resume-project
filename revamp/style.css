@@ -1,0 +1,236 @@
+/* Google Font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    background: #e5e5e5;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* ======================
+      LEFT SIDEBAR
+====================== */
+
+.sidebar {
+    grid-row: 1/4;
+    background: #000;
+    color: #fff;
+    padding: 35px 25px;
+}
+
+.sidebar figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sidebar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #3a3a3a;
+}
+
+
+.sidebar h2,
+.sidebar h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e4a522;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar section {
+    margin-bottom: 35px;
+}
+
+.sidebar dt {
+    color: #e4a522;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.sidebar dd {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.sidebar ul {
+    padding-left: 18px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.sidebar h4 {
+    margin: 12px 0 8px;
+    font-size: 15px;
+}
+
+/* ======================
+        HEADER
+====================== */
+
+.header {
+    background: #ffffff;
+    padding: 35px 40px 20px;
+    border-bottom: 3px solid #e4a522;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.header h2 {
+    color: #000;
+    font-size: 18px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* ======================
+      MAIN SECTION
+====================== */
+
+.main {
+    background: #fff;
+    padding: 25px 40px;
+}
+
+.main section {
+    margin-bottom: 30px;
+}
+
+.main h3 {
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e4a522;
+    display: inline-block;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.main h4 {
+    color: #000;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.main p {
+    color: #555;
+    line-height: 1.7;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.main ul {
+    padding-left: 22px;
+}
+
+.main li {
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ======================
+      EDUCATION
+====================== */
+
+.education li {
+    list-style: square;
+}
+
+/* ======================
+      PROJECTS
+====================== */
+
+#project li {
+    margin-bottom: 18px;
+}
+
+.strength ul li {
+    margin-bottom: 10px;
+}
+
+/* ======================
+      FOOTER
+====================== */
+
+.footer {
+    background: #ffffff;
+    border-top: 2px solid #555;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 15px;
+}
+
+/* ======================
+      LINKS
+====================== */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ======================
+      PRINT
+====================== */
+
+@media print {
+
+    body {
+        margin: 0;
+        box-shadow: none;
+        background: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        #resume {
+            width: 95%;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header figure {
+            position: static;
+            margin: 15px auto;
+        }
+
+        .skill ul {
+            display: block;
+        }
+    }
+
+}
